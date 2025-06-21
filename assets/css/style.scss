@@ -4,17 +4,32 @@
 @import "minima";
 
 /* === Sarthak's Dev Theme === */
+
+:root {
+  --bg-color: #f0faff;
+  --text-color: #0d1117;
+  --accent-color: #00e5ff;
+}
+
+html[data-theme="dark"] {
+  --bg-color: #0f1117;
+  --text-color: #cfd8dc;
+  --accent-color: #00ffff;
+}
+
 body {
-  background: #0f1117;
-  color: #cfd8dc;
+  background-color: var(--bg-color);
+  color: var(--text-color);
+  transition: background 0.3s ease, color 0.3s ease;
   font-family: 'Fira Code', 'JetBrains Mono', monospace;
 }
 
 a {
-  color: #00e5ff;
+  color: var(--accent-color);
   border-bottom: 1px solid transparent;
   transition: 0.2s;
 }
+
 a:hover {
   border-bottom: 1px solid #00e5ff;
 }
