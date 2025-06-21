@@ -1,0 +1,31 @@
+---
+---
+
+@import "minima";
+
+/* === Sarthak's Dev Theme === */
+body {
+  background: #0f1117;
+  color: #cfd8dc;
+  font-family: 'Fira Code', 'JetBrains Mono', monospace;
+}
+
+a {
+  color: #00e5ff;
+  border-bottom: 1px solid transparent;
+  transition: 0.2s;
+}
+a:hover {
+  border-bottom: 1px solid #00e5ff;
+}
+
+h1, h2, h3 {
+  color: #00ffff;
+}
+
+code, pre {
+  background: #1e212b;
+  color: #00e5ff;
+  padding: 0.3rem 0.5rem;
+  border-radius: 5px;
+}
